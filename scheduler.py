@@ -47,6 +47,7 @@ class Scheduler(ABC):
 
                         if cycle not in self.cycles:
                             self.cycles.append(cycle)
+                            
 class InOrder(Scheduler):
     ''' Perform transmission between disk in order present in list '''
     def __init__(self, bypass):
